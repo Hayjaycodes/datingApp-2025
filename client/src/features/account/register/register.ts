@@ -2,10 +2,11 @@ import { Component, inject, input, output } from '@angular/core';
 import { RegisterCreds, User } from '../../../types/user';
 import { FormsModule } from '@angular/forms';
 import { AccountService } from '../../../core/services/account-service';
+import { TestComponent } from './test/test.component';
 
 @Component({
   selector: 'app-register',
-  imports: [FormsModule],
+  imports: [FormsModule, TestComponent],
   templateUrl: './register.html',
   styleUrl: './register.css',
 })
